@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us - Watches Website</title>
+<script src="https://kit.fontawesome.com/467c132070.js" crossorigin="anonymous"></script>
+<style>
+.clock{
+    background-image: url(contact\ us.avif);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+#modelbox{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+.fa{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    padding-top: 20px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #ff0058;
+}
+.op{
+    padding: 20px 40px 40px 40px;
+    font-size: 20px;
+    line-height: 22px;
+    background: black;
+    margin-bottom: 10px;
+    color: white;
+}
+.testimonial-text{
+    background: #ff0058;
+    color: #fff;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+.user-text{
+    width: 80%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.user-text.active-text{
+    display: block;
+    animation: moveup 0.5s linear forwards;
+}
+.user-pic.active-pic{
+    width: 100px;
+    border-radius: 100%;
+    border: 3px solid #ff0058;
+}
+@keyframes moveup{
+    0%{
+        margin-top: 25px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+.user-text .fa-solid{
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.user-text p{
+    font-size: 20px;
+}
+.user-text span{
+    display: block;
+    font-size: 20px;
+    margin-top: 70px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.testimonial-pic{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-pic{
+    width: 65px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+    <div class="container1">
+        <div class="testimonial">
+            <div class="testimonial-text">
+                <div class="user-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>I had contributed my time in this site by making Products and Contact Us Page. By providing
+                        customers variety of options for watches and the platform so they can interact with us.
+                    </p>
+                        <span>Dipasha</span>
+                </div>
+                <div class="user-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>I had contributed in this site by making Account Page so the customer can sign in our websiite 
+                        and enjoy it.</p>
+                        <span>Disha Goyal</span>
+                </div>
+                <div class="user-text active-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>I had contributed in it by making Home page customer can go through it and can see our 
+                        varieties which we are providing to them. </p>
+                        <span>Dimple</span>
+                </div>
+                <div class="user-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>I had contributed in by making About Us page providing the customers detailed information about us 
+                        so, they can easily connect and interact with us.
+                    </p>
+                        <span>Dipti</span>
+                </div>
+                </div>
+            </div>
+            <div class="testimonial-pic">
+                <img src="me (2).jpeg" alt="" class="user-pic" onclick="showreview()">
+                <img src="disha.jpeg" alt="" class="user-pic active-pic" onclick="showreview()">
+                <img src="Women1.jpeg" alt="" class="user-pic" onclick="showreview()">
+                <img src="Women2.jpeg" alt="" class="user-pic" onclick="showreview()">
+            </div>
+        </div>
+    </div>
+    <script>
+        let userTexts=document.getElementsByClassName("user-text");
+        let userPics=document.getElementsByClassName("user-pic");
+    
+        function showreview(){
+            for(userPic of userPics){
+                userPic.classList.remove("active-pic");
+            }
+            for(userText of userTexts){
+                userText.classList.remove("active-text");
+            }
+            let i=Array.from(userPics).indexOf(event.target);
+    
+            userPics[i].classList.add("active-pic");
+            userTexts[i].classList.add("active-text");
+        }
+    </script>
+<div class="clock">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" ondblclick="modelbox()">Send Message</button>
+    </form>
+    <div id="modelbox" class="hidden">
+      <p class="op">Your message has been sent successfully. We will get back to you soon.</p>
+      <i class="fa fa-times" onclick="closemodel()"></i>
+    </div>
+  </div>
+</div>
+
+  <script>
+    let modelbox=document.getElementById("modelbox");
+                document.ondblclick=function(){
+                    modelbox.style.display="block";
+                }
+            function closemodel(){
+                modelbox.style.display="none";
+                
+             }
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+  var successMessage = document.getElementById('success-message');
+  successMessage.classList.remove('hidden');
+  document.getElementById('contact-form').reset();
+});
+
+  </script>
+</body>
+</html>
+
+
+

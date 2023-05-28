@@ -1,0 +1,343 @@
+<html>
+    <head>
+        <title>DD</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="products.html">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/467c132070.js" crossorigin="anonymous"></script>
+<style>.dropdown{visibility:hidden;}
+#menuitems div a{font-size: 20px;color: black;}
+#prod:hover .dropdown{visibility: visible;}
+</style>
+    </head>
+    <body>
+        <div class="header">
+            <video id="background-video" autoplay loop muted>
+                <source src="watch.mp4" type="video/mp4">
+              </video>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="d logo.webp" width="200px">
+                </div>
+                <nav class="menu">
+                    <div id="menuitems" style="display: flex;flex-direction: row;">
+                        <div style="padding-left: 100px;margin-right: 50px;"><a href="site.html">Home</a></div>
+                        <div style="margin-left: 0px;margin-right: 50px;"id="prod"><a href="">Products</a>
+                            <div style="display: flex;flex-direction: column;margin-left: 50px;margin-right: 50px;" >
+                                <div class="dropdown"><a href="cartWomen.html" class="main">Women's</a></div>
+                                    <div class="dropdown"><a href="cartMen.html" class="main">Men's</a></div>
+                                    <div class="dropdown"><a href="cartChild.html" class="main">Children's</a></div></ul>
+                            </div></div>
+                        <div style="margin-left: 50px;margin-right: 50px;"><a href="about.html">About</a></div>
+                        <div style="margin-left: 50px;margin-right: 50px;"><a href="watch.html">Contact</a></div>
+                        <div style="margin-left: 50px;margin-right: 50px;"><a href="account.html">Account</a></div>
+                        <a href="" class="btn" ondrag="modelbox()">EXIT</a>
+                        </div>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>"Unveiling Time's Finest."</h1>
+                    <p>Watches are timekeeping devices that are typically worn on the wrist or carried in a pocket. 
+                        They provide a convenient and portable way to tell the time. Watches can be analog, with hour and minute hands,
+                         or digital, displaying the time numerically. Some watches also include additional features such as date 
+                         displays, alarms, timers, and chronographs for measuring elapsed time. 
+                        They come in various styles, materials, and brands, catering to different preferences and fashion trends.</p>
+                        <a href="#feature" class="btn">Explore Now &#8594</a>
+                    </div>
+            </div>
+            <div id="modelbox">
+            <div class="offer-text">
+                <h2>Thanks for Exploring our website.</h2>
+                <i class="fa fa-times" onclick="closemodel()"></i> 
+            </div>
+        </div>
+    
+        <script>
+            let modelbox=document.getElementById("modelbox");
+                document.ondrag=function(){
+                    modelbox.style.display="block";
+                }
+            function closemodel(){
+                modelbox.style.display="none";
+                
+             }
+        </script>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-scroll-div">
+    <div>
+        <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
+    </div>
+    <div class="cover">
+        <div class="scroll-images">
+            <div class="child"><img class="child-img" src="WAtchM2.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchW1.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchC2.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WAtchM4.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchW3.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchC6.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchM6.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchW6.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WAtch C3.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchM1.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchW2.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchC5.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchM3.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchW4.jpeg" alt="image"></div>
+            <div class="child"><img class="child-img" src="WatchC4.jpeg" alt="image"></div>
+        </div>
+    </div>
+    <div>
+        <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
+    </div>
+</div>
+
+<script>
+    function scrolll() {
+        var left = document.querySelector(".scroll-images");
+        left.scrollBy(-350, 0)
+    }
+
+    function scrollr() {
+        var right = document.querySelector(".scroll-images");
+        right.scrollBy(350, 0)
+    }
+</script>
+
+
+
+</div>
+<div class="small-container" id="feature">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="WatchM1.jpeg"  height="300px">
+            <h4>Royalx White</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-o" ></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="WatchW9.jpeg" alt="" height="300px">
+            <h4>Roll Purple</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$750.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="WatchC2.jpeg" alt="" height="300px">
+            <h4>Rosy Pink</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$1050.00</p>
+        </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="WatchM4.jpeg" alt="" height="300px">
+            <h4>Shine White</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="WatchW4.jpeg" alt="" height="300px">
+            <h4>Royal Pink</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$750.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="WAtch C3.jpeg" alt="" height="300px">
+            <h4>Deoxy Blue</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$1050.00</p>
+        </div>
+    </div>
+</div>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="smart band.jpg" alt="" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p class="ui">Exclusively Available!!!</p>
+                <p class="ux">Smart Band</p>
+                <p>Smart bands or smart bracelets are quickly displacing the traditional wristwatch. 
+                    The reason is simple, if you have a pocket-friendly band that tells you the time along with keeping 
+                    track of your fitness, then you would opt for it too. Most smart bands are controlled by a dedicated 
+                    application on your phone. This application keeps track 
+                    of your daily activities such as the number of steps walked in a day, heart rate and more.</p>
+                    <a href="" class="btn" ondrag ="modelbox()">Buy Now &#8594</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container1">
+    <div class="testimonial">
+        <div class="testimonial-text">
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>If you're looking for a stylish and functional watch, Nice Watches has a great selection to choose from. 
+                    Their timepieces range from classic and sophisticated to trendy and sporty.</p>
+                    <span>Caden bronson</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>The quality is top-notch, and the prices are reasonable for the level of craftsmanship you receive. 
+                    The website is user-friendly and easy to navigate, 
+                    making it simple to find exactly what you're looking for.</p>
+                    <span>Odetta Phyllis</span>
+            </div>
+            <div class="user-text active-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>I love the watches and the customer service team is helpful and responsive. Overall, 
+                    I would highly recommend their Watches 
+                    to anyone in the market for a new timepiece.</p>
+                    <span>Sherman Osborne</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>This watch is of best quality and craftsmanship. The materials used are top-notch, from the sapphire crystal face to the stainless steel band. The watch's movement is precise and reliable, and it keeps accurate time.  Overall, this watch is an excellent investment 
+                    for anyone looking for a high-quality timepiece that will last for years to come.</p>
+                    <span>Georgina Smith</span>
+            </div>
+            <div class="user-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>The attention to detail in the design is noticeable, with elegant and subtle finishing touches.
+                    I would totally buy more in future.</p>
+                    <span>Roger shinozaki</span>
+            </div>
+        </div>
+        <div class="testimonial-pic">
+            <img src="Men1.jpeg" alt="" class="user-pic" onclick="showreview()">
+            <img src="Women1.jpeg" alt="" class="user-pic active-pic" onclick="showreview()">
+            <img src="Men2.jpeg" alt="" class="user-pic" onclick="showreview()">
+            <img src="Women2.jpeg" alt="" class="user-pic" onclick="showreview()">
+            <img src="Men3.jpeg" alt="" class="user-pic" onclick="showreview()">
+        </div>
+    </div>
+</div>
+<script>
+    let userTexts=document.getElementsByClassName("user-text");
+    let userPics=document.getElementsByClassName("user-pic");
+
+    function showreview(){
+        for(userPic of userPics){
+            userPic.classList.remove("active-pic");
+        }
+        for(userText of userTexts){
+            userText.classList.remove("active-text");
+        }
+        let i=Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+    }
+</script>
+
+
+
+
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <i class="fa-brands fa-google fa-2xl"></i>
+            </div>
+            <div class="col-5">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+            </div>
+            <div class="col-5">
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+            </div>
+            <div class="col-5">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+            <div class="col-5">
+                <i class="fa-brands fa-tiktok fa-2xl"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>You can Download and Enjoy our Services from given link below.</p>
+                <div class="app-logo">
+                    <img src="playstoe.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="facebook.jpg" alt="">
+                <p>For more details contact us on Facebook-Twitter. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons |</li>
+                    <li>Blog Post |</li>
+                    <li>Return Policy |</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook |</li>
+                    <li>Twitter |</li>
+                    <li>Instagram |</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Dimple | Dipasha | Dipti | Disha</p>
+    </div>
+</div>
+        
+    </body>
+</html>
